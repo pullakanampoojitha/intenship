@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for const
+        //const is mainly for performing strict rules while creating a variable 
+       // we cannnot redeclear a same variable
+       // we cannot leave a variable as undefied
+        //const s="poojitha"//if we want to change/update the value further it is not allowed shows error
+       // console.log(s)
+       // s="hi"
+       // console.log(s)
+        //for let
+        //in let only difference is we can re-declear a same variable
+        let d=45 //suppose if it is stored in c drive
+        console.log(d)
+        d="javascript"//this updated value is also stoed in c drive itself
+        console.log(d)
+        //for var
+        var a="kavya"
+        console.log(a)
+        a=87
+        console.log(a)
+    
+
+        var a=[2,51,89,9,5,78],dummy=[]
+       // for(var q=0;q<a.length;q++)
+        //{
+          //  console.log(q)
+        //}
+     
+     //   a.map(function(u){//alternate way to use for loop is map
+       // consolelog(u)
+     //})
+        //
+     //dummy=a.map(function(u){
+       // return u+10
+     //})
+
+     
+     dummy=a.filter(function(u){  //used for finding out the largest numbers than 35 in array
+        return u>35
+     })
+     console.log(dummy)
+
+      var employees=[
+        {id:1,name:"poojitha",salary:45000},
+        {id:2,name:"kavya",salary:90000},
+        {id:3,name:"sai",salary:120000},
+        {id:4,name:"sasi",salary:100000}]
+var bonus=employees.map(function(emp){
+    return {id:emp.id,salary:emp.salary+10000}
+})
+console.log(bonus)
+var belowAvg=employees.filter(function(emp){
+    return emp.salary<100000
+})
+console.log(belowAvg)
+    </script>
+
+</body>
+</html>
+

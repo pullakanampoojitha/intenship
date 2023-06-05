@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var firstName=document.getElementById("firstname").value 
+            var mobile=document.getElementById("mobile").value
+            var firstNameCheck=/^[a-zA-Z]+$/            //regular expression
+            var mobileCheck=/^[0-9]{10}$/              // for numbers no need of + in regular expression and {} this is for length
+            var email=document.getElementById("email").value
+            var emailCheck=/^[a-zA-Z.#]+@[a-z]+\.[a-z]{2,3}$/
+                             //siva.ram  @ codegnan .com
+            if(firstName==""||firstName.length<3)
+            {
+                alert("please enter the first name")
+                return false
+            }
+            if(!firstName.match(firstNameCheck)){
+                alert("name must contain alphabets only")
+                return  false
+            }
+            if(!mobile.match(mobileCheck)){
+                alert("please enter valid mobile number")
+                return false
+            }
+            if(!email.match(emailCheck)){
+                alert("enter valid email")
+                return false
+            }
+            return true
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()">
+       <p><input type="text" placeholder="enter firstname" id="firstname"/></p>
+       <p><input type="number" placeholder="enter mobile number" id="mobile"/></p>
+       <p><input type="text" placeholder="enter email" id="email"/></p>
+       <button>submit</button>
+    </form>
+</body>
+</html>

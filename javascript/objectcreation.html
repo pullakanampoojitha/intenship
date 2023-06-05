@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object creation</title>
+</head>
+<body>
+    <script>
+    var mySelf={
+        name:"poojitha",
+        age:20,
+        gender:"female"
+
+    }
+    console.log(mySelf)
+    console.log(mySelf.gender,mySelf.age)
+    var x=43,m=8;
+    //all theses are some ways to print the output
+    x=x+m;
+    console.log(x)
+    x+=m;//compound assignment operator
+    console.log(x)
+    console.log("x and m values are",x,m,"and sum is",x+m)//this creates more problem while working if we miss any thing thismay leads to error
+    console.log(`x and m values are ${x},${m} and sum is ${x+m}`)//for the above problem this becomes easy to use compared to above one
+    
+    
+    
+    //methods:
+    //1.alert
+    var g=alert("hy")
+    console.log(g)
+    //2.prompt
+    var p=prompt("enter")//prompt always considers the string value only wt ever u give
+    var q=prompt("enter")
+    console.log(p+q)
+    //so that we need to conver that by using datatype
+    var p=Number(prompt("enter p"))
+    var q=Number(prompt("enter q"))
+    console.log(p+q)
+    //3.confirm
+    var c=confirm("Are u major")
+    console.log(c)
+
+
+    console.log(4=="4")//true//== compares only values if theses are same it returns true
+    console.log(4==="4")//false//=== compares value and also with its datatypes too if both r same that it returns true else false
+    </Script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+h1{
+    color: aqua;
+    background-color: yellow;
+}
+p{
+    color:red;
+}
+body{
+    background-image:url('https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=740&t=st=1685094786~exp=1685095386~hmac=6ec3b9c1e3eabe8702d7961284368c2e93b01307ab53d17955dc6b6592482be4');
+    background-size: cover;
+
+}
